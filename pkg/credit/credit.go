@@ -11,7 +11,6 @@ func Calculate(creditSum, termInMonths, ratePerYear int) (int, int, int) {
 	ratePerMonth := float64(ratePerYear) / 12.0 / 100.0
 	// three levels of the precision
 	ratePerMonth = math.Round(ratePerMonth * 1_000) / 1_000
-	fmt.Println(ratePerMonth)
 	k := ratePerMonth * math.Pow(1 + ratePerMonth, float64(termInMonths)) / (math.Pow(1 + ratePerMonth, float64(termInMonths)) - 1)
 	// six levels of the precision
 	k = math.Round(k * 1_000_000) / 1_000_000
