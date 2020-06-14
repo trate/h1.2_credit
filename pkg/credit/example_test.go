@@ -9,6 +9,6 @@ func ExampleCalculate() { // имя функции - Example + имя прове
 	fmt.Println(credit.Calculate(1_000_000_00, 36, 20))
 	fmt.Println(credit.Calculate(10_000_00, 36, 20))
 	// Output:
-	// 3718400 33862300 133862300
-	// 37184 338623 1338623
+	// 3716358 33788888 133788888
+	// 37163 337868 1337868
 }
